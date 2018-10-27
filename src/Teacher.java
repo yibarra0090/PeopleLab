@@ -1,8 +1,8 @@
 public class Teacher extends Person {
     private String Subject;
     private String Title;
-    public Teacher(String Subject, String Title){
-        super(Teacher);
+    public Teacher(String firstName, String familyName, String Subject, String Title){
+        super(firstName, familyName);
         this.Subject = Subject;
         this.Title = Title;
     }
@@ -10,7 +10,6 @@ public class Teacher extends Person {
         return Subject;
     }
     public String toString(){
-        return Title+""+"."+" "+FamilyName;
+        return Title+""+"."+" "+getFamilyName();
     }
-
 }

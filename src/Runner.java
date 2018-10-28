@@ -14,8 +14,8 @@ public class Runner{
     }*/
     static String[] firstNames = {"Jack","Jessica","Yussef","Wei","Dea"};
     static String[] familyNames = {"Bob","Colsen","Ibarra","Chen","Kurti"};
-    static double[] GPA = {23,32,45,12,42};
-    static int[] age = {1,2,3,4,5};
+    static double[] GPA = {23.01,32.02,45.03,12.04,42.05};
+    static int[] age = {13,52,63,124,25};
     static String[] gender = {"male","female","male","female","doge"};
 
     public static void main(String[] args){
@@ -32,6 +32,7 @@ public class Runner{
             System.out.println(cur.getSubject());
             for (Student cur2 : students){
                 System.out.println(cur2);
+                System.out.println(cur2.getGPA() + " " + cur2.getGender()+ " " + cur2.getAge() );
             }
         }
     }

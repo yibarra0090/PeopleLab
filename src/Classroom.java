@@ -18,7 +18,6 @@ public class Classroom {
         }
         return sum/ students.length;
     }
-
     public void printClass(){
         System.out.println(teacher.toString());
         for (Student s : students){

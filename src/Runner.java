@@ -19,17 +19,18 @@ public class Runner{
     static String[] gender = {"male","female","male","female","doge"};
 
     public static void main(String[] args){
-        Person Levin = new Teacher("Nathan","Levin","Computer Science", "Mr.");
-
-        Person[] teachers =  {Levin};
-        Person[] students = new Person[firstNames.length];
+        Teacher Levin = new Teacher("Nathan","Levin","Computer Science", "Mr.");
+        Teacher Doggie = new Teacher("Kitty","Doggie","Animal Study", "Mr.");
+        Teacher[] teachers = {Levin, Doggie};
+        Student[] students = new Student[firstNames.length];
         for (int i = 0; i < students.length; i++){
             students[i] = new Student(firstNames[i],familyNames[i],GPA[i],gender[i],age[i]);
         }
 
-        for (Person cur : teachers) {
+        for (Teacher cur : teachers) {
             System.out.println(cur);
-            for (Person cur2 : students){
+            System.out.println(cur.getSubject());
+            for (Student cur2 : students){
                 System.out.println(cur2);
             }
         }

@@ -16,7 +16,7 @@ public class Runner{
     static String[] familyNames = {"Bob","Colsen","Ibarra","Chen","Kurti"};
     static double[] GPA = {23.01,32.02,45.03,12.04,42.05};
     static int[] age = {13,52,63,124,25};
-    static String[] gender = {"male","female","male","female","doge"};
+    static String[] gender = {"male","female","male","doge","female"};
 
     public static void main(String[] args){
         Teacher Levin = new Teacher("Nathan","Levin","Computer Science", "Mr.");

@@ -1,4 +1,4 @@
-public class Classroom {
+/*public class Classroom {
     private Student[] students;
     private Teacher teacher;
 
@@ -24,4 +24,4 @@ public class Classroom {
             System.out.println(s.toString());
         }
     }
-}
+}*/

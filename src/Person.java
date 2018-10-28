@@ -1,5 +1,6 @@
 public class Person {
-    private String firstName, familyName;
+    private String firstName;
+    private String familyName;
     public Person(String firstName, String familyName){
         this.firstName = firstName;
         this.familyName = familyName;

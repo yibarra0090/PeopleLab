@@ -1,18 +1,18 @@
 public class Student extends Person {
     private double GPA;
-    private double height;
+    private String gender;
     private int age;
-    public Student(String firstName, String familyName, double height, int age){
+    public Student(String firstName, String familyName, double GPA, String gender, int age){
         super(firstName, familyName);
         this.GPA = GPA;
-        this.height = height;
+        this.gender = gender;
         this.age = age;
     }
     public double getGPA(){
         return GPA;
     }
-    public double getHeight(){
-        return height;
+    public String getGender(){
+        return gender;
     }
     public int getAge(){
         return age;

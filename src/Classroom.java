@@ -1,8 +1,8 @@
 public class Classroom {
-    private Student[] students;
+    private Student[] students; //field
     private Teacher teacher;
 
-    public Classroom (Student[] students, Teacher teacher){
+    public Classroom (Student[] students, Teacher teacher){ //constructor
         this.teacher = teacher;
         this.students = students;
     }
@@ -11,14 +11,14 @@ public class Classroom {
         return this.teacher.getSubject();
     }
 
-    public double classAverage(){
+    public double classAverage(){ //add all student GPA and divide by the number of students.
         double sum = 0;
         for (Student s : students){
             sum += s.getGPA();
         }
         return sum/ students.length;
     }
-    public void printClass(){
+    public void printClass(){ //print data.
         System.out.println(teacher.toString());
         System.out.println(teacher.getSubject());
         for (Student s : students){

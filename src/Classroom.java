@@ -8,7 +8,7 @@ public class Classroom {
     }
 
     public String getSubject(){
-        return teacher.getSubject();
+        return this.teacher.getSubject();
     }
 
     public double classAverage(){
@@ -25,5 +25,4 @@ public class Classroom {
             System.out.println(s.toString());
         }
     }
-
 }

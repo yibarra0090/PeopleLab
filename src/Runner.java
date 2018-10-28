@@ -14,7 +14,16 @@ public class Runner {
         Classroom classroom = new Classroom(students, teacher);
         classroom.printClass();
         System.out.println("The teacher is " + teacher + ". Their subject is " + teacher.getSubject() + ".");
-        System.out.println("The class's average GPA is" + classroom.classAverage());
+        System.out.println("The class's average GPA is " + classroom.classAverage());
+        System.out.println(Runner.randomstudent());
+
+
+    }
+    public static String randomstudent(){
+        String randomFirstName = firstNames[(int) (Math.random() * firstNames.length)];
+        String randomFamilyName = familyNames[(int) (Math.random() * familyNames.length)];
+        String randomGPA = Double.toString(GPA[(int) (Math.random() * GPA.length)]);
+        return ("Random Student "+ randomFirstName + " " + randomFamilyName + " GPA: " + randomGPA);
     }
 }
 

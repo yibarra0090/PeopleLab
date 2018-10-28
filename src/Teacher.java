@@ -7,7 +7,7 @@ public class Teacher extends Person {
         this.Title = Title;
     }
     public String getSubject(){
-        return Subject;
+        return (Subject);
     }
     public String toString(){
         return (Title + " " + getFamilyName());

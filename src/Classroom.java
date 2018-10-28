@@ -22,7 +22,7 @@ public class Classroom {
         System.out.println(teacher.toString());
         System.out.println(teacher.getSubject());
         for (Student s : students){
-            System.out.println(s.toString()+"\n"+" Their GPA is:" +s.getGPA() +"\n"+" Gender:"+s.getGender()+"\n"+" Age:"+s.getAge());
+            System.out.println(s.toString()+"\n"+ "Their GPA is:" +s.getGPA() +"\n"+" Gender:"+s.getGender()+"\n"+" Age:"+s.getAge());
         }
     }
 }
